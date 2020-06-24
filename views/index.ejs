@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Day Tracker</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Time</th>
+        <th>Time Passed</th>
+        <th>Remove</th>
+      </tr>
+
+      <% for(var i = 0; i <= results.length - 1; i++){ %>
+        <tr>
+          <td>results[x].time_checked</td>
+          <td>results[x].time_passed</td>
+          <td>
+            <form action='/deleteTime/<%= results[x].id %>'>
+              <button>Delete</button>
+            </form>
+          </td>
+        </tr>
+      <% } %>
+    </table>
+  </body>
+</html>
