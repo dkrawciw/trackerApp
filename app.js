@@ -14,6 +14,10 @@ const connection = mysql.createConnection({
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
+app.listen(80, function(){
+  console.log('Tracker App Running');
+})
+
 app.get('/', function(req, res){
   connection.query('SELECT id, time_checked, DATEDIFF(NOW(), time_checked) AS time_passed FROM checked_times', function(err, results, fields){
     if(err) throw err;
