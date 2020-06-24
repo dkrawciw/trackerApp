@@ -13,10 +13,10 @@
 
       <% for(var i = 0; i <= results.length - 1; i++){ %>
         <tr>
-          <td>results[x].time_checked</td>
-          <td>results[x].time_passed</td>
+          <td>results[i].time_checked</td>
+          <td>results[i].time_passed</td>
           <td>
-            <form action='/deleteTime/<%= results[x].id %>'>
+            <form action='/deleteTime/<%= results[i].id %>'>
               <button>Delete</button>
             </form>
           </td>
