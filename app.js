@@ -7,7 +7,7 @@ const connection = mysql.createConnection({
   host    : '127.0.0.1',
   user    : 'root',
   password: 'xD#X3227l!7K&LW4k4av',
-  database: 'interrobang_db',
+  database: 'tracker',
   port    : '3306'
 });
 
